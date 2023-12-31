@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -16,11 +17,23 @@
 header {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Logo */
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
 }
 
 ul {
     display: flex;
     flex-direction: row;
+    list-style: none; 
 }
 
 body {
@@ -28,10 +41,9 @@ body {
     justify-content: center;
 }
 
-/* Logo */
-.logo {
-    width: 61.09px;
-    height: 19px;
+main {
+    margin-top: 10px;
+
 }
 
 .main-container {
@@ -39,6 +51,30 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+   
+}
+
+.main-nav li {
+    margin-left: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    vertical-align: text-top;
+    padding-top: 10px;
+}
+.main-nav li:hover {
+    color:#0065FC;
+    border-top:2px solid #0065FC;
 }
 
 a {
